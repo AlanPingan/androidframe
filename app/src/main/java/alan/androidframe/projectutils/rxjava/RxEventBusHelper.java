@@ -27,6 +27,8 @@ public class RxEventBusHelper {
         for (Integer key : keySet) {
             RxEventBus.getInstance().unRegister(key, observableMap.get(key));
         }
+
+
         observableMap.clear();
     }
 
